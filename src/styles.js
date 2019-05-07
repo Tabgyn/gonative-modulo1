@@ -1,25 +1,25 @@
-import { StyleSheet } from "react-native";
-import { getStatusBarHeight } from "react-native-iphone-x-helper";
+import { StyleSheet } from 'react-native';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    backgroundColor: '#ff5050',
 
-    backgroundColor: "#ff5050"
+    flex: 1,
   },
 
   header: {
-    justifyContent: "center",
-    alignItems: "center",
+    alignItems: 'center',
+    backgroundColor: '#fff',
 
-    paddingTop: getStatusBarHeight(),
     height: 80,
-    backgroundColor: "#fff"
+    justifyContent: 'center',
+    paddingTop: getStatusBarHeight(),
   },
 
   headerTitle: {
-    color: "#333",
+    color: '#333',
     fontSize: 18,
-    fontWeight: "bold"
-  }
+    fontWeight: 'bold',
+  },
 });
